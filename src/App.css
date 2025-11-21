@@ -1,0 +1,211 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+button {
+  border: 0;
+  background-color: white;
+  outline: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+nav a.active {
+  color: royalblue;
+}
+
+.home {
+  margin: 1rem 0;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home .page_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .page_title h3 {
+  font-size: 25px;
+}
+
+.home .page_title button {
+  padding: 0.6rem 1rem;
+  background-color: #0066ff;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 18px;
+}
+
+.home .search_category {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 1.5rem;
+}
+
+.home .search_category input {
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 25%;
+  outline: 0;
+}
+
+.home .search_category select {
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 15%;
+}
+
+.home .search_category select::before {
+  display: none;
+}
+
+.home .loadMore {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.table .tabel_head {
+  border-bottom: 1px solid gainsboro;
+  padding: 1.5rem 1rem;
+  color: #999;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.table  .col_product_name , .table .cell_product_name {
+  width: 40%;
+}
+.table .tabel_head .col_product_price , .table .cell_product_price{
+  width: 15%;
+}
+.table .tabel_head .col_product_category , .table .cell_product_category {
+  width: 25%;
+}
+.table .tabel_head .col_product_action , .table .cell_product_action{
+  width: 20%;
+}
+
+.table .table_body .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.table .cell_product_action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.table .cell_product_action img {
+  width: 20px;
+
+}
+
+/*dfeafb*/
+
+.dashboard_layout_structure {
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  height: 100vh;
+  background-color: #f9fafb;
+  border-right: 1px solid gainsboro;
+  padding: 1rem;
+}
+
+.aside_auth {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+}
+
+.aside_auth .circle_photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+aside .aside_links {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+aside .aside_links a {
+  display: block;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+}
+
+aside .aside_links a.active {
+  background-color: #dfeafb;
+  color: #0066ff;
+}
+
+.dashboard_Content {
+  width: 80%;
+  margin: 0 0 0 auto;
+  padding: 2rem 3rem;
+}
