@@ -11,7 +11,7 @@ function Aside() {
         </div>
       </div>
       <div className="aside_links">
-        <NavLink to={"/dashboard/"} className={""} end>Dashboard</NavLink>
+        <NavLink to={"/dashboard"} className={""} end>Dashboard</NavLink>
         <NavLink to={"/dashboard/products"} >Products</NavLink>
         <NavLink to={"/dashboard/category"} className={""}>Category</NavLink>
         <NavLink to={" "} className={""}>Setting</NavLink>

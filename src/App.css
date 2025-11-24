@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -16,8 +16,6 @@ button {
   width: 70%;
   margin: 0 auto;
 }
-
-
 
 nav {
   display: flex;
@@ -40,7 +38,7 @@ nav a.active {
 
 .home {
   margin: 1rem 0;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -115,20 +113,24 @@ nav a.active {
   text-align: center;
 }
 
-.table  .col_product_name , .table .cell_product_name {
+.table .col_product_name,
+.table .cell_product_name {
   width: 40%;
 }
-.table .tabel_head .col_product_price , .table .cell_product_price{
+.table .tabel_head .col_product_price,
+.table .cell_product_price {
   width: 15%;
 }
-.table .tabel_head .col_product_category , .table .cell_product_category {
+.table .tabel_head .col_product_category,
+.table .cell_product_category {
   width: 25%;
 }
-.table .tabel_head .col_product_action , .table .cell_product_action{
+.table .tabel_head .col_product_action,
+.table .cell_product_action {
   width: 20%;
 }
 
-.table .table_body .row{
+.table .table_body .row {
   width: 100%;
   display: flex;
   align-items: center;
@@ -145,7 +147,6 @@ nav a.active {
 
 .table .cell_product_action img {
   width: 20px;
-
 }
 
 /*dfeafb*/
@@ -166,7 +167,6 @@ aside {
   display: flex;
   gap: 1rem;
   align-items: center;
-
 }
 
 .aside_auth .circle_photo {
@@ -208,4 +208,149 @@ aside .aside_links a.active {
   width: 80%;
   margin: 0 0 0 auto;
   padding: 2rem 3rem;
+}
+
+.page_title {
+  margin-bottom: 1.2rem;
+}
+
+.page_title p {
+  font-size: 14px;
+  color: #999;
+  margin-top: 0.6rem;
+}
+
+.gen_cate_prod {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.gen_cate_prod .cards {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  width: 45%;
+}
+
+.gen_cate_prod .cards p {
+  margin: 0.5rem 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.gen_cate_prod .cards button {
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #0066ff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 17px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.gen_cate_prod .cards button:hover {
+  transform: scale(0.98);
+}
+
+.dash_Tables {
+  margin-top: 2rem;
+}
+
+.dash_Tables h2 {
+  padding: 1.5rem 1rem;
+}
+
+.dash_Tables.Category_Table .col_product_name,
+.dash_Tables.Category_Table .cell_product_name {
+  width: 100%;
+  text-align: start;
+}
+
+.Gen_Product {
+  width: 80%;
+  height: 100vh;
+  background-color: #dfeafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Gen_Product .Gen_Layout {
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  width: 60%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputs .input_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs .input_container label {
+  margin-bottom: 0.5rem;
+}
+
+.inputs .input_container input {
+  outline: 0;
+  padding: 0.7rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.inputs .input_container.two_inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputs .input_container.two_inputs div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs .input_container.two_inputs div select {
+  padding: 0.7rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.inputs .input_container textarea {
+  padding: 1rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.gen_btns{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.gen_btns button {
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.gen_btns button.ok_btn {
+  color: white;
+  background-color: #0066ff;
 }
