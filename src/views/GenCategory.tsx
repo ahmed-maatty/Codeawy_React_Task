@@ -15,16 +15,16 @@ function GenCategory({ setGenCategory }: genCategoryProps) {
         <div className="inputs">
           <div className="input_container">
             <label htmlFor="">Category Name</label>
-            <input
-              type="text"
-              placeholder="e.g Electornics"
-              required
-            />
+            <input type="text" placeholder="e.g Electornics" required />
           </div>
 
           <div className="input_container">
             <label htmlFor="">Description (optional)</label>
-            <textarea name="" id=""placeholder="Descripe The Category"></textarea>
+            <textarea
+              name=""
+              id=""
+              placeholder="Descripe The Category"
+            ></textarea>
           </div>
         </div>
         <div className="gen_btns">

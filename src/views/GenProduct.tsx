@@ -43,7 +43,11 @@ function GenProduct({ SetGenProduct }: GenProductProps) {
           </div>
           <div className="input_container">
             <label htmlFor="">Description (optional)</label>
-            <textarea name="" id=""placeholder="Descripe The Product"></textarea>
+            <textarea
+              name=""
+              id=""
+              placeholder="Descripe The Product"
+            ></textarea>
           </div>
         </div>
         <div className="gen_btns">

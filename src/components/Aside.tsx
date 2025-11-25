@@ -1,9 +1,9 @@
-import {NavLink} from "react-router"
+import { NavLink } from "react-router";
 
 function Aside() {
   return (
     <aside>
-      <div className='aside_auth'>
+      <div className="aside_auth">
         <div className="circle_photo"></div>
         <div>
           <h4>React Practice</h4>
@@ -11,13 +11,15 @@ function Aside() {
         </div>
       </div>
       <div className="aside_links">
-        <NavLink to={"/dashboard"} className={""} end>Dashboard</NavLink>
-        <NavLink to={"/dashboard/products"} >Products</NavLink>
-        <NavLink to={"/dashboard/category"} className={""}>Category</NavLink>
-        <NavLink to={" "} className={""}>Setting</NavLink>
+        <NavLink to={"/dashboard"} end>
+          Dashboard
+        </NavLink>
+        <NavLink to={"/dashboard/products"}>Products</NavLink>
+        <NavLink to={"/dashboard/category"}>Category</NavLink>
+        <NavLink to={" "}>Setting</NavLink>
       </div>
     </aside>
-  )
+  );
 }
 
-export default Aside
+export default Aside;

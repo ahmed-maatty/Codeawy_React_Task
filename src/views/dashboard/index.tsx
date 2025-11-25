@@ -25,7 +25,9 @@ function Dashboard() {
           <div className="cards">
             <h2>categories</h2>
             <p>organize products by creating and managing categories</p>
-            <button onClick={() => setGenCategory(true)}>add new category</button>
+            <button onClick={() => setGenCategory(true)}>
+              add new category
+            </button>
           </div>
         </div>
 

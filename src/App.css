@@ -157,7 +157,7 @@ nav a.active {
 
 aside {
   width: 20%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f9fafb;
   border-right: 1px solid gainsboro;
   padding: 1rem;
@@ -334,7 +334,7 @@ aside .aside_links a.active {
   border-radius: 5px;
 }
 
-.gen_btns{
+.gen_btns {
   margin: 1rem 0;
   display: flex;
   align-items: center;
@@ -349,8 +349,41 @@ aside .aside_links a.active {
   cursor: pointer;
 }
 
-
 .gen_btns button.ok_btn {
   color: white;
   background-color: #0066ff;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category .cards button {
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #0066ff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.table.dash_Tables.category_table .col_product_name,
+.table.dash_Tables.category_table .col_product_price,
+.table.dash_Tables.category_table .cell_product_name,
+.table.dash_Tables.category_table .cell_product_price {
+  width: 40%;
+}
+
+.table.dash_Tables.category_table .col_product_action,
+.table.dash_Tables.category_table .cell_product_action {
+  width: 20%;
+}
+
+.cell_product_action button {
+  cursor: pointer;
 }

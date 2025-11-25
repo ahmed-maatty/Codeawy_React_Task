@@ -3,14 +3,14 @@ import deleteIcon from "../assets/delete.png";
 
 function Home() {
   return (
-    <div className='container'>
-      <section className='home'>
-        <div className='page_title'>
+    <div className="container">
+      <section className="home">
+        <div className="page_title">
           <h3>Products</h3>
           <button>+ create product</button>
         </div>
         <div className="search_category">
-          <input type="text" placeholder='Search Products...' />
+          <input type="text" placeholder="Search Products..." />
           <select name="" id="">
             <option value="">Category</option>
             <option value=""></option>
@@ -31,16 +31,22 @@ function Home() {
               <div className="cell_product_price">$1299.00</div>
               <div className="cell_product_category">electronics</div>
               <div className="cell_product_action">
-                <button><img src={deleteIcon} alt="delete" /></button>
-                <button><img src={editIcon} alt="edit" /></button>
+                <button>
+                  <img src={deleteIcon} alt="delete" />
+                </button>
+                <button>
+                  <img src={editIcon} alt="edit" />
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div><button className='loadMore'> Load More</button></div>
+        <div>
+          <button className="loadMore"> Load More</button>
+        </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
